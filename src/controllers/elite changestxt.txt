@@ -1,0 +1,10 @@
+level setting flow
+swipe menu home and activity
+phone number to uid everywhaere
+ui color cobination
+6club to eliteclub 
+add textbox instend of select in create salary for type
+set option for lock withdraw in member profile
+add search option in memeber profile for child members 
+set list of users of redeem giftcode 
+hwid / Ip of users
