@@ -3,6 +3,10 @@ import connection from "../config/connectDB.js";
 const homePage = async (req, res) => {
   const [settings] = await connection.query("SELECT `app` FROM admin_ac");
   let app = settings[0].app;
+
+
+  console.log(app)
+  
   return res.render("home/index.ejs", { app });
 };
 
@@ -23,6 +27,7 @@ const supportPage = async (req, res) => {
     let [settings] = await connection.query(
       "SELECT `telegram`, `cskh` FROM admin_ac",
     );
+
     telegram = settings[0].telegram;
   } else {
     if (users[0].level != 0) {
