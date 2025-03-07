@@ -2,10 +2,12 @@ import connection from "../config/connectDB.js";
 
 const homePage = async (req, res) => {
   const [settings] = await connection.query("SELECT `app` FROM admin_ac");
+
+    console.log(settings)
   let app = settings[0].app;
 
 
-  console.log(app)
+
   
   return res.render("home/index.ejs", { app });
 };
